@@ -8,7 +8,34 @@
     tools:context="com.example.vartikasharma.categoryselection.MainActivity">
 
     <TextView
+        android:id="@+id/categoryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Category" />
+
+    <TextView
+        android:id="@+id/listOfVariantText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="List of Variants Groups"/>
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_below="@id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include layout="@layout/item_layout"/>
+    </LinearLayout>
 </RelativeLayout>
